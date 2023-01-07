@@ -11,24 +11,24 @@
 
 <body>
   <!-- HEADER -->
-  <header>
+  <header class="res-none">
     <div class="container-fluid">
-      <div class="row bg-secondary justify-content-center">
-        <div class="col-2 r-shadow">
+      <div class="row bg-secondary justify-content-center ">
+        <div class="col-4 col-lg-2 r-shadow">
           <div class="">
             <button type="button" class="btn btn-secondary">
               <span><i class="fa-solid fa-user h-icon"></i></span>Agent Login
             </button>
           </div>
         </div>
-        <div class="col-2 r-shadow">
+        <div class="col-4 col-lg-2 r-shadow">
           <div class="">
             <button type="button" class="btn btn-secondary">
               <span><i class="fa-solid fa-user h-icon"></i></span>Customer Login
             </button>
           </div>
         </div>
-        <div class="col-2 r-shadow">
+        <div class="col-4 col-lg-2 r-shadow">
           <div class="">
             <button type="button" class="btn btn-secondary">
               <span><i class="fa-regular fa-file h-icon"></i> Not a member?</span>
@@ -36,11 +36,11 @@
             </button>
           </div>
         </div>
-        <div class="col-2 r-shadow text-light align-self-stretch d-flex justify-content-center align-items-center">
-          Call Us Now: 815-140-2001
+        <div class="col-6 col-md-4 col-lg-2 r-shadow align-self-stretch d-flex justify-content-center align-items-center">
+          <span class="nb text-light">Call Us Now: 815-140-2001</span>
         </div>
-        <div class="w-25 r-shadow"></div>
-        <div class="p-0 col-2 d-flex r-shadow">
+        <div class="w-25 r-shadow res-none"></div>
+        <div class="p-0 col-6 col-lg-2 d-inline-flex r-shadow ">
           <div class="r-shadow d-flex align-items-center "><i class="align-middle fa-brands fa-facebook-f h-icon"></i></div>
           <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-twitter h-icon"></i></div>
           <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-tumblr h-icon"></i></div>
@@ -49,37 +49,73 @@
       </div>
     </div>
   </header>
+  <!-- Tried with only Flexbox -->
+  <!-- <div class="container-fluid bg-secondary">
+    <div class="d-flex justify-content-center">
+      <div class="flex-grow-1"></div>
+      <div class="r-shadow">
+        <button type="button" class="btn btn-secondary">
+          <span><i class="fa-solid fa-user h-icon"></i></span>Agent Login
+        </button>
+      </div>
+      <div class="r-shadow">
+        <button type="button" class="btn btn-secondary">
+          <span><i class="fa-solid fa-user h-icon"></i></span>Customer Login
+        </button>
+      </div>
+      <div class="r-shadow">
+        <button type="button" class="btn btn-secondary">
+          <span><i class="fa-regular fa-file h-icon"></i> Not a member?</span>
+          <a href="voyage_register.html">Register</a>
+        </button>
+      </div>
+      <div class=" r-shadow align-self-stretch d-flex justify-content-center align-items-center">
+        <span class="nb text-light px-2 ">Call Us Now: 815-140-2001</span>
+      </div>
+      <div class="flex-grow-1 r-shadow"></div>
+
+      <div class="d-inline-flex justify-content-center">
+        <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-facebook-f h-icon"></i></div>
+        <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-twitter h-icon"></i></div>
+        <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-tumblr h-icon"></i></div>
+        <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-pinterest h-icon"></i></div>
+      </div>
+      <div class="flex-grow-1"></div>
+    </div>
+  </div> -->
 
   <!-- NAVBAR-->
-  <div class="container-fluid text-center">
-    <div class="row align-items-center">
-      <div class="col">
-        <div class="d-flex justify-content-center align-items-center">
-          <img src="/ref/logo.png" alt="logo" class="img-fluid m-10">
-        </div>
-      </div>
-      <div class="col-7">
-        <div>
-          <ul class="nav nav-tabs align-items-center">
-            <li class="nav-item">
-              <a href="#" class="nav-link active align-middle">HOME</a>
+  <div class="navbar sticky-top navbar-expand-md p-2 text-center bg-light">
+      <nav class="container-fluid flex-wrap flex-md-nowrap" aria-label="Navigation">
+          <div class="navbar-brand">
+            <img src="/ref/logo.png" alt="logo" class="img-fluid m-10">
+          </div>
+        
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vnavbar" aria-controls="vnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-2x text-secondary"></i>
+        </button>
+        
+        <div id="vnavbar" class="navbar-collapse collapse justify-content-end">
+          <ul class="navbar-nav flex-row flex-wrap align-items-center">
+            <li class="nav-item col-12 col-md-auto">
+              <a href="#" class="nav-link active align-middle px-3">HOME</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">DESTINATIONS</a>
+            <li class="nav-item col-12 col-md-auto">
+              <a href="#" class="nav-link px-3">DESTINATIONS</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">CRUISES</a>
+            <li class="nav-item col-12 col-md-auto">
+              <a href="#" class="nav-link px-3">CRUISES</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">SPECIALS</a>
+            <li class="nav-item col-12 col-md-auto">
+              <a href="#" class="nav-link px-3">SPECIALS</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">HOLIDAYS</a>
+            <li class="nav-item col-12 col-md-auto">
+              <a href="#" class="nav-link px-3">HOLIDAYS</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">BLOG</a>
+            <li class="nav-item col-12 col-md-auto">
+              <a href="#" class="nav-link px-3">BLOG</a>
             </li>
-            <li class="nav-item m-3">
+            <li class="nav-item col-12 col-md-auto my-2 ">
               <span class="fa-stack fa-2x text-secondary m-10">
                 <i class="fa-regular fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-magnifying-glass fa-stack-1x"></i>
@@ -87,8 +123,7 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </nav>
   </div>
 
   <!--MAIN CAROUSEL -->
@@ -108,7 +143,7 @@
       <div class="w-100 h-100 dark-overlay position-absolute"></div>
       <div class="carousel-caption">
         <h1 class="fw-xxl pb-3 ">TO TRAVEL IS TO LIVE</h1>
-        <h3>You Don't Need Magic to Disapear. All you need is a destination.</h3>
+        <h3 class="res-none">You Don't Need Magic to Disapear. All you need is a destination.</h3>
         <button type="button" class="btn btn-primary btn-lg m-3 p-3 text-light">SHOW ON THE MAP</button>
         <button type="button" class="btn btn-trans-light btn-lg m-3 p-3 ">MORE INFO</button>
       </div>
@@ -124,12 +159,10 @@
     </button>
   </div>
   <!-- Find Your Holydays  SEARCH -->
-  <div class="container-fluid bg-secondary text-center ">
-    <div class="row align-items-center ">
-      <div class="" style="position:relative;">
-      </div>
-      <div class="col text-start ">
-        <div class="d-flex justify-content-end">
+  <div class="container-fluid bg-secondary ">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-auto ">
+        <div class="d-flex justify-content-end" >
           <div class="py-2">
             <span class="fs-3 fw-light">FIND YOUR</span>
             <h1 class="fw-bolder text-light">HOLYDAYS</h1>
@@ -137,21 +170,21 @@
           <img class="mx-3 align-self-stretch" src="/ref/seperator.png" alt="seperator">
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-md-auto">
         <div class="input-group m-2">
           <span class="fs-4 fw-light text-light p-3"> Where </span>
           <input type="text" class="form-control" placeholder="destination" aria-label="destination">
           <span class="input-group-text p-3" id="basic-addon1"><i class="fa-solid fa-earth-americas"></i></span>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-md-auto">
         <div class="input-group m-2">
           <span class="fs-4 fw-light text-light p-3"> Where </span>
           <input type="text" class="form-control" placeholder="select date" aria-label="date">
           <span class="input-group-text p-3 " id="basic-addon1"><i class="fa-solid fa-calendar-alt"></i></span>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-md-auto">
         <div class="input-group m-2">
           <button type="button" class="btn btn-primary text-light p-3 fw-bold fs-5">Search</button>
         </div>
@@ -159,7 +192,7 @@
     </div>
   </div>
   <!-- SPECIAL OFFERS SCROLLABLE CARDS-->
-  <div class="container-fluid text-center px-0 py-4">
+  <div class="container-fluid text-center px-0 py-4 bg-light">
     <div class="row mt-5 text-secondary">
       <h2>SPECIAL OFFERS</h2>
     </div>
@@ -168,7 +201,7 @@
         </p>
     </div>
     <div class="row justify-content-start  flex-nowrap overflow-scroll my-5 py-3">
-      <div class="col-6 col-md-2">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
         <div class="card thic">
           <img src="/ref/destination_1.png" class="card-img-top" alt="...">
           <div class="card-body p-0">
@@ -190,7 +223,7 @@
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-2">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
         <div class="card thic">
           <img src="/ref/destination_2.png" class="card-img-top" alt="...">
           <div class="card-body p-0">
@@ -212,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="card thic">
             <img src="/ref/destination_3.png" class="card-img-top" alt="...">
             <div class="card-body p-0">
@@ -234,7 +267,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="card thic">
             <img src="/ref/destination_4.png" class="card-img-top" alt="...">
             <div class="card-body p-0">
@@ -256,7 +289,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="card thic">
             <img src="/ref/destination_5.png" class="card-img-top" alt="...">
             <div class="card-body p-0">
@@ -278,7 +311,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="card thic">
             <img src="/ref/destination_6.png" class="card-img-top" alt="...">
             <div class="card-body p-0">
@@ -300,7 +333,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="card thic">
             <img src="/ref/destination_2.png" class="card-img-top" alt="...">
             <div class="card-body p-0">
@@ -388,7 +421,7 @@
     </div>
   </div>
   <!-- HAPPY CLIENTS -->
-  <div class="container-fluid text-center p-4">
+  <div class="container-fluid text-center p-4 bg-light">
     <div class="row mt-5 text-secondary">
       <h2>HAPPY CLIENTS</h2>
     </div>
@@ -396,7 +429,7 @@
       <p>What Customers Say About Us And Why They Love Our Services!<p>
     </div>
     <div class="row justify-content-start flex-nowrap overflow-scroll">
-      <div class="col-4 ">
+      <div class="col-12 col-md-6 col-lg-4 ">
         <div class="card review-cardd">
           <div class="card-body text-start">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dicta excepturi at aliquid itaque facere cumque nam fugiat</p>
@@ -405,7 +438,7 @@
             </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card review-card">
           <div class="card-body text-start">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dicta excepturi at aliquid itaque facere cumque nam fugiat</p>
@@ -414,7 +447,7 @@
             </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card review-cardd">
           <div class="card-body text-start">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dicta excepturi at aliquid itaque facere cumque nam fugiat</p>
@@ -423,7 +456,7 @@
             </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card review-card">
           <div class="card-body text-start">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dicta excepturi at aliquid itaque facere cumque nam fugiat</p>
@@ -432,7 +465,7 @@
             </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card review-card">
           <div class="card-body text-start">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dicta excepturi at aliquid itaque facere cumque nam fugiat</p>
@@ -447,7 +480,7 @@
   <footer>
     <div class="container-fluid bg-secondary" style="font-size: 14px;" >
       <div class="row  justify-content-center align-items-center g-2 m-3" style="border-bottom: 1px outset lightgrey ;">
-        <div class="col-2 p-5">
+        <div class="col-12 col-md-6 col-lg-2 p-5">
             <h3 class="text-primary">Newsletter </h3>
             <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error odio deserunt quasi eos. Cum nesciunt odit suscipit commodi quae inventore, maxime impedit tempore doloribus.</p>
             <div class="d-flex">
@@ -455,7 +488,7 @@
               <button type="button" class="btn btn-primary btn-sm fs-7 px-3 mx-2 text-light fw-bold"> GO </button>
             </div>
         </div>
-        <div class="col-2 p-5 text-light">
+        <div class="col-12 col-md-6 col-lg-2 p-5 text-light">
           <h3 class="text-primary">Latest News </h3>
           <div class="container-fluid px-0">
             <div class="row justify-content-start align-items-start g-2">
@@ -474,7 +507,7 @@
             </div>
           </div>
         </div>
-        <div class="col-2 p-5">
+        <div class="col-12 col-md-6 col-lg-2 p-5">
           <h3 class="text-primary pb-1">Tags </h3>
           <div class="d-flex flex-wrap">
             <span class="btn btn-sm btn-trans-light-s m-1">Travel</span>
@@ -490,7 +523,7 @@
             <span class="btn btn-sm btn-trans-light-s m-1">Food</span>
           </div>
         </div>
-        <div class="col-2 p-5 text-light">
+        <div class="col-12 col-md-6 col-lg-2 p-5 text-light">
           <h3 class="text-primary">Address </h3>
           <!-- adress, email and social icon links -->
           <div class="d-flex flex-column fw-light ">
