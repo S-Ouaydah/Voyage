@@ -13,7 +13,6 @@ $info: darken(gray, 10%);
 //     "dark": #212121
 // );
 $link-decoration: none;
-// change link color on active
 
 $btn-border-radius: 0px;
 $btn-border-radius-lg:5px;
@@ -29,24 +28,57 @@ $accordion-bg: $secondary;
 $navbar-toggler-focus-width: 0px;
 //import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+.pad{
+    padding-left: 8vw !important;
+    padding-right: 8vw !important;
+}
+.sec-op{
+    color: $light;
+    opacity: 0.65;
+}
+.separator{
+    margin-right: 10px;
+    padding: 0px 10px;
+    border-right: 1px solid rgba(lightgray, 0.6);
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: $secondary;
+        border-top: 1px solid rgba(lightgray, 0.6);
+        border-right: 1px solid rgba(lightgray, 0.6);
+        width: 12px;
+        height: 12px;
+        top: 50%;
+        right: -11px;
+        transform: rotate(45deg) translate(-50%);
+    }
+}
 .h-icon {  
     padding: 5px 8px !important;
     margin: 5px !important;
     color: white;
 }   
+#b-icon-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+#b-icon-flex > *{
+    flex: 1 1 auto;
+    // margin: 1%;
+}
 .b-icon{
     width: fit-content;
-    padding-bottom: 5%;
     color: $light;
-}
-.b-icon:hover{
-    transform: scale(1.05);
-    color: $primary;
-}
-.b-icon>.text-light:hover{
-    transform: scale(1.05);
-    color: $primary;
+    transition: color 0.25s, transform 0.25s;;
+    &:hover{
+        transform: scale(1.05);
+        color: $primary;
+        >*{
+            color:$primary;
+        }
+    }
+    
 }
 .blog-icon{
     border: 1px solid white;
@@ -66,10 +98,11 @@ $navbar-toggler-focus-width: 0px;
 }
 .thic{
     border-width: .4em;
-}
-.thic:hover{
-    transform: scale(1.07);
-    border-color: $primary;
+    transition: transform 0.25s;
+    &:hover{
+        transform: scale(1.07);
+        border-color: $primary;
+    }
 }
 .round{
     border-radius: 2%;
@@ -79,9 +112,15 @@ $navbar-toggler-focus-width: 0px;
 }
 .r-shadow {
     border-right: solid 1px black;
+    border-radius: 0%;
     box-shadow: 1px 0px rgba(255,255,255,0.2) !important;
     width: fit-content;
+    &>button{
+        padding: 0.25rem 0.5rem;
+        font-size: .875rem;
+    }
 }
+
 .nav-tabs .nav-link.active {
     border: 0px;
     color: $primary;
@@ -97,7 +136,7 @@ $navbar-toggler-focus-width: 0px;
 }
 
 .palace-bg{
-    background-image: url(./ref/palace.png);
+    background-image: url(../../ref/palace.png);
     background-size: cover;
     background-position: center;
 }
@@ -140,11 +179,14 @@ $navbar-toggler-focus-width: 0px;
   }
 .review-card:hover,.review-cardd:hover{
     border-top: 10px $primary solid;
+    padding-top: 0px;
 }
-.review-card {
+.review-card,.review-cardd {
 	position: relative;
 	border-radius: 0em;
+    padding-top: 9px;
     margin-bottom: 4em;
+    transition: border-color 0.25s;
 }
 .review-card:before {
 	content: ' ';
@@ -167,11 +209,6 @@ $navbar-toggler-focus-width: 0px;
 	bottom: -40px;
 	border: 20px solid;
 	border-color: white white transparent transparent;
-}
-.review-cardd {
-	position: relative;
-	border-radius: 0em;
-    margin-bottom: 4em;
 }
 .review-cardd:before {
 	content: ' ';
@@ -196,7 +233,7 @@ $navbar-toggler-focus-width: 0px;
 	border-color: white white transparent transparent;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .fw-xxl{
         font-size: 1.5rem;
         font-weight: 700;
@@ -216,7 +253,7 @@ $navbar-toggler-focus-width: 0px;
         font-size: .7rem;
     }   
     .res-none{
-        display: none;
+        display: none !important;
     }
     .nav-burger{
         display: block;
@@ -224,7 +261,7 @@ $navbar-toggler-focus-width: 0px;
     .fa-stack.fa-2x{
         font-size: 1.3rem;
     }
-    .fa-stack.fa-6x{
+    .fa-stack.fa-5x{
         font-size: 3rem;
     }
     .p-5{
@@ -236,10 +273,29 @@ $navbar-toggler-focus-width: 0px;
     .card-img-top{
         height: 20vh;
     }
-}
-@media (max-width: 600px) {
+    #vacsearch{
+        flex-wrap: wrap;
+    }
+    .separator{
+        margin-right: 0px;
+        border-right: 0px solid rgba(lightgray, 0.6);
+        position: relative;
+        &:after{
+            border-top: 0px solid rgba(lightgray, 0.6);
+            border-right: 0px solid rgba(lightgray, 0.6);
+        }
+        & > * {
+            text-align:center;
+        }
+    }
     .navbar-expand-md {
         flex-wrap: nowrap;
         justify-content: flex-start;
     }
 }
+@media screen and (max-width: 992px) {
+    .res-none-md{
+        display: none !important;
+    }
+
+} 

@@ -11,81 +11,40 @@
 
 <body>
   <!-- HEADER -->
-  <header class="res-none">
-    <div class="container-fluid">
-      <div class="row bg-secondary justify-content-center ">
-        <div class="col-4 col-lg-2 r-shadow">
-          <div class="">
-            <button type="button" class="btn btn-secondary">
-              <span><i class="fa-solid fa-user h-icon"></i></span>Agent Login
-            </button>
-          </div>
-        </div>
-        <div class="col-4 col-lg-2 r-shadow">
-          <div class="">
-            <button type="button" class="btn btn-secondary">
-              <span><i class="fa-solid fa-user h-icon"></i></span>Customer Login
-            </button>
-          </div>
-        </div>
-        <div class="col-4 col-lg-2 r-shadow">
-          <div class="">
-            <button type="button" class="btn btn-secondary">
-              <span><i class="fa-regular fa-file h-icon"></i> Not a member?</span>
-              <a href="voyage_register.html">Register</a>
-            </button>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 r-shadow align-self-stretch d-flex justify-content-center align-items-center">
-          <span class="nb text-light">Call Us Now: 815-140-2001</span>
-        </div>
-        <div class="w-25 r-shadow res-none"></div>
-        <div class="p-0 col-6 col-lg-2 d-inline-flex r-shadow ">
-          <div class="r-shadow d-flex align-items-center "><i class="align-middle fa-brands fa-facebook-f h-icon"></i></div>
-          <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-twitter h-icon"></i></div>
-          <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-tumblr h-icon"></i></div>
-          <div class="d-flex align-items-center"><i class="fa-brands fa-pinterest h-icon"></i></div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- Tried with only Flexbox -->
-  <!-- <div class="container-fluid bg-secondary">
-    <div class="d-flex justify-content-center">
-      <div class="flex-grow-1"></div>
-      <div class="r-shadow">
+  <header class="container-fluid bg-secondary pad">
+    <div class="d-flex justify-content-center flex-wrap">
+      <div class="r-shadow px-1">
         <button type="button" class="btn btn-secondary">
-          <span><i class="fa-solid fa-user h-icon"></i></span>Agent Login
+          <span><i class="fa-solid fa-user h-icon"></i>Agent Login</span>
         </button>
       </div>
-      <div class="r-shadow">
+      <div class="r-shadow px-1">
         <button type="button" class="btn btn-secondary">
-          <span><i class="fa-solid fa-user h-icon"></i></span>Customer Login
+          <span><i class="fa-solid fa-user h-icon"></i>Customer Login</span>
         </button>
       </div>
-      <div class="r-shadow">
+      <div class="r-shadow px-1">
         <button type="button" class="btn btn-secondary">
-          <span><i class="fa-regular fa-file h-icon"></i> Not a member?</span>
+          <span><i class="fa-regular fa-file h-icon"></i>Not a member?</span>
           <a href="voyage_register.html">Register</a>
         </button>
       </div>
-      <div class=" r-shadow align-self-stretch d-flex justify-content-center align-items-center">
-        <span class="nb text-light px-2 ">Call Us Now: 815-140-2001</span>
+      <div class="r-shadow align-self-stretch d-flex justify-content-center align-items-center">
+        <span class="nb text-light px-3 text-center res-none">Call Us Now: 815-140-2001</span>
       </div>
-      <div class="flex-grow-1 r-shadow"></div>
 
-      <div class="d-inline-flex justify-content-center">
-        <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-facebook-f h-icon"></i></div>
-        <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-twitter h-icon"></i></div>
-        <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-tumblr h-icon"></i></div>
-        <div class="r-shadow d-flex align-items-center"><i class="fa-brands fa-pinterest h-icon"></i></div>
+      <div class="d-inline-flex justify-content-center flex-grow-1 res-none-md px-5">
+        <span class="r-shadow"></span>
+        <button type="button" class="btn btn-sm btn-secondary r-shadow"><i class="fa-brands fa-facebook-f h-icon"></i></button>
+        <button type="button" class="btn btn-sm btn-secondary r-shadow"><i class="fa-brands fa-twitter h-icon"></i></button>
+        <button type="button" class="btn btn-sm btn-secondary r-shadow"><i class="fa-brands fa-tumblr h-icon"></i></button>
+        <button type="button" class="btn btn-sm btn-secondary r-shadow"><i class="fa-brands fa-pinterest h-icon"></i></button>
       </div>
-      <div class="flex-grow-1"></div>
     </div>
-  </div> -->
+  </header>
 
   <!-- NAVBAR-->
-  <div class="navbar sticky-top navbar-expand-md p-2 text-center bg-light">
+  <div class="navbar sticky-top navbar-expand-md text-center bg-light py-0 pad">
       <nav class="container-fluid flex-wrap flex-md-nowrap" aria-label="Navigation">
           <div class="navbar-brand">
             <img src="./ref/logo.png" alt="logo" class="img-fluid m-10">
@@ -159,48 +118,32 @@
     </button>
   </div>
   <!-- Find Your Holydays  SEARCH -->
-  <div class="container-fluid bg-secondary ">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-12 col-md-auto ">
-        <div class="d-flex justify-content-end" >
-          <div class="py-2">
-            <span class="fs-3 fw-light">FIND YOUR</span>
-            <h1 class="fw-bolder text-light">HOLYDAYS</h1>
-          </div>
-          <img class="mx-3 align-self-stretch" src="./ref/seperator.png" alt="seperator">
-        </div>
+  <div class="container-fluid bg-secondary pad">
+    <div id="vacsearch" class="d-flex justify-content-evenly align-items-center">
+      <div class="py-4 separator">
+        <div class="fs-4 fw-light sec-op">FIND YOUR</div>
+        <h1 class="fw-bolder text-light">HOLYDAYS</h1>
       </div>
-      <div class="col-12 col-md-auto">
-        <div class="input-group m-2">
-          <span class="fs-4 fw-light text-light p-3"> Where </span>
-          <input type="text" class="form-control" placeholder="destination" aria-label="destination">
-          <span class="input-group-text p-3" id="basic-addon1"><i class="fa-solid fa-earth-americas"></i></span>
-        </div>
+      <div class="input-group m-2">
+        <span class="fs-5 fw-light text-light p-2 sec-op res-none-md"> Where </span>
+        <input type="text" class="form-control" placeholder="destination" aria-label="destination">
+        <span class="input-group-text p-3" id="basic-addon1"><i class="fa-solid fa-earth-americas"></i></span>
       </div>
-      <div class="col-12 col-md-auto">
-        <div class="input-group m-2">
-          <span class="fs-4 fw-light text-light p-3"> Where </span>
-          <input type="text" class="form-control" placeholder="select date" aria-label="date">
-          <span class="input-group-text p-3 " id="basic-addon1"><i class="fa-solid fa-calendar-alt"></i></span>
-        </div>
+      <div class="input-group m-2">
+        <span class="fs-5 fw-light text-light p-2 sec-op res-none-md"> When </span>
+        <input type="text" class="form-control" placeholder="select date" aria-label="date">
+        <span class="input-group-text p-3 " id="basic-addon1"><i class="fa-solid fa-calendar-alt"></i></span>
       </div>
-      <div class="col-12 col-md-auto">
-        <div class="input-group m-2">
-          <button type="button" class="btn btn-primary text-light p-3 fw-bold fs-5">Search</button>
-        </div>
-      </div>
+        <button type="button" class="btn btn-primary text-light px-3 fw-bold fs-5 ">Search</button>
     </div>
   </div>
   <!-- SPECIAL OFFERS SCROLLABLE CARDS-->
-  <div class="container-fluid text-center px-0 py-4 bg-light">
+  <div class="container-fluid text-center px-0 py-4 bg-light overflow-hidden">
     <div class="row mt-5 text-secondary">
       <h2>SPECIAL OFFERS</h2>
+      <p>Best 2022 packages where people love to stay!</p>
     </div>
-    <div class="row">
-        <p>Best 2022 packages where people love to stay!
-        </p>
-    </div>
-    <div class="row justify-content-start  flex-nowrap overflow-scroll my-5 py-3">
+    <div class="row justify-content-start flex-nowrap overflow-scroll my-5 p-3">
       <div class="col-12 col-sm-6 col-md-4 col-lg-2">
         <div class="card thic">
           <img src="./ref/destination_1.png" class="card-img-top" alt="...">
@@ -360,68 +303,65 @@
   </div>
   <!-- HOLIDAYS TYPE -->
   <div class="palace-bg">
-    <div class="container-fluid text-center text-light p-4 dark-overlay">
+    <div class="container-fluid text-center text-light py-4 dark-overlay pad">
       <div class="row mt-5">
         <h2> HOLYDAYS TYPE </h2>
-        <p style="color:lightgray;">Best 2022 packages where people love to stay!
-        </p>
+        <p class="sec-op">Explore your dreams to travel the world!</p>
       </div>
-      <div class="row m-5">
-      </div>
-      <div class="row d-flex justify-content-center align-items-center ">
+      <div id="b-icon-flex" class="row d-flex justify-content-between align-items-center my-5 ">
         <div class="col-2 px-0 b-icon">
-          <span class="fa-stack fa-6x m-10">
+          <span class="fa-stack fa-5x m-10">
             <i class="fa-regular fa-circle fa-stack-2x"></i>
             <!-- <i class="fa-regular fa-circle text-white fa-stack-2x" style="font-size: 1.8em; line-height:inherit"></i> -->
                 <i class="fa-solid fa-ship fa-stack-1x"></i>
           </span>
-          <div class="p-2 fs-5"> Cruise </div>
+          <div class="p-2 fs-5 sec-op"> Cruise </div>
         </div>
         <div class="col-2 px-0 b-icon">
-          <span class="fa-stack fa-6x m-10">
+          <span class="fa-stack fa-5x m-10">
             <i class="fa-regular fa-circle fa-stack-2x"></i>
             <!-- <i class="fa-regular fa-circle text-white fa-stack-2x" style="font-size: 1.8em; line-height:inherit"></i> -->
             <i class="fa-solid fa-city fa-stack-1x"></i>
           </span>
-          <div class="p-2 fs-5"> City Breaks </div>
+          <div class="p-2 fs-5 sec-op"> City Breaks </div>
         </div>
         <div class="col-2 px-0 b-icon">
-          <span class="fa-stack fa-6x m-10">
+          <span class="fa-stack fa-5x m-10">
             <i class="fa-regular fa-circle fa-stack-2x"></i>
             <!-- <i class="fa-regular fa-circle text-white fa-stack-2x" style="font-size: 1.8em; line-height:inherit"></i> -->
             <i class="fa-solid fa-heart fa-stack-1x"></i>
           </span>
-          <div class="p-2 fs-5"> Honeymoon </div>
+          <div class="p-2 fs-5 sec-op"> Honeymoon </div>
         </div>
         <div class="col-2 px-0 b-icon">
-          <span class="fa-stack fa-6x m-10">
+          <span class="fa-stack fa-5x m-10">
             <i class="fa-regular fa-circle fa-stack-2x"></i>
             <!-- <i class="fa-regular fa-circle text-white fa-stack-2x" style="font-size: 1.8em; line-height:inherit"></i> -->
             <i class="fa-solid fa-compass fa-stack-1x "></i>
           </span>
-          <div class="p-2 fs-5"> Adventure </div>
+          <div class="p-2 fs-5 sec-op"> Adventure </div>
         </div>
         <div class="col-2 px-0 b-icon">
-          <span class="fa-stack fa-6x m-10">
+          <span class="fa-stack fa-5x m-10">
             <i class="fa-regular fa-circle fa-stack-2x"></i>
             <!-- <i class="fa-regular fa-circle text-white fa-stack-2x" style="font-size: 1.8em; line-height:inherit"></i> -->
             <i class="fa-solid fa-tree fa-stack-1x"></i>
           </span>
-          <div class="p-2 fs-5"> Safari </div>
+          <div class="p-2 fs-5 sec-op"> Safari </div>
         </div>
         <div class="col-2 px-0 b-icon">
-          <span class="fa-stack fa-6x  m-10">
+          <span class="fa-stack fa-5x  m-10">
            <i class="fa-regular fa-circle fa-stack-2x "></i>
            <!-- <i class="fa-regular fa-circle text-white fa-stack-2x" style="font-size: 1.8em; line-height:inherit"></i> -->
            <i class="fa-solid fa-umbrella-beach fa-stack-1x"></i>
           </span>
-          <div class="p-2 fs-5"> Beach </div>
+          <div class="p-2 fs-5 sec-op"> Beach </div>
         </div>
       </div>
     </div>
   </div>
   <!-- HAPPY CLIENTS -->
-  <div class="container-fluid text-center p-4 bg-light">
+  <div class="container-fluid text-center py-4 bg-light">
     <div class="row mt-5 text-secondary">
       <h2>HAPPY CLIENTS</h2>
     </div>
@@ -478,9 +418,9 @@
   </div>
   <!-- FOOTER -->
   <footer>
-    <div class="container-fluid bg-secondary" style="font-size: 14px;" >
-      <div class="row  justify-content-center align-items-center g-2 m-3" style="border-bottom: 1px outset lightgrey ;">
-        <div class="col-12 col-md-6 col-lg-2 p-5">
+    <div class="container-fluid bg-secondary pad" style="font-size: .8rem;" >
+      <div class="row  justify-content-between align-items-start g-2 py-4 " style="border-bottom: 1px outset lightgrey ;">
+        <div class="col-12 col-md-6 col-lg-2 p-3">
             <h3 class="text-primary">Newsletter </h3>
             <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error odio deserunt quasi eos. Cum nesciunt odit suscipit commodi quae inventore, maxime impedit tempore doloribus.</p>
             <div class="d-flex">
@@ -488,18 +428,18 @@
               <button type="button" class="btn btn-primary btn-sm fs-7 px-3 mx-2 text-light fw-bold"> GO </button>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-2 p-5 text-light">
+        <div class="col-12 col-md-6 col-lg-3 p-3 text-light">
           <h3 class="text-primary">Latest News </h3>
           <div class="container-fluid px-0">
             <div class="row justify-content-start align-items-start g-2">
-              <div class="col-2 p-1 border"><img src="https://picsum.photos/100/100" alt="" class="img-fluid w-100"></div>
+              <div class="col-1 p-1 border"><img src="https://picsum.photos/100/100" alt="" class="img-fluid w-100"></div>
               <div class="col-10">
                 <p class="text-light m-0">Postformat Gallery: Multiple Images</p>
                 <p class="text-primary fw-light">October 21,2012 -3:31pm</p>
               </div>
             </div>
             <div class="row justify-content-start align-items-start g-2">
-              <div class="col-2 p-1 border"><img src="https://picsum.photos/100/100" alt="" class="img-fluid w-100"></div>
+              <div class="col-1 p-1 border"><img src="https://picsum.photos/100/100" alt="" class="img-fluid w-100"></div>
               <div class="col-10">
                 <p class="text-light m-0">Snowboarding Is Fun!</p>
                 <p class="text-primary fw-light">October 21,2015 -4:31pm</p>
@@ -507,7 +447,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-2 p-5">
+        <div class="col-12 col-md-6 col-lg-3 p-3">
           <h3 class="text-primary pb-1">Tags </h3>
           <div class="d-flex flex-wrap">
             <span class="btn btn-sm btn-trans-light-s m-1">Travel</span>
@@ -523,7 +463,7 @@
             <span class="btn btn-sm btn-trans-light-s m-1">Food</span>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-2 p-5 text-light">
+        <div class="col-12 col-md-6 col-lg-2 p-3 text-light">
           <h3 class="text-primary">Address </h3>
           <!-- adress, email and social icon links -->
           <div class="d-flex flex-column fw-light ">
@@ -541,7 +481,7 @@
         </div>
       </div>
       <div class="row justify-content-center align-items-center g-2 py-4 fw-bold ">
-        <!-- navbar reminder links seperated by :: -->
+        <!-- navbar reminder links separated by :: -->
         <div class="col-12 text-center text-light fs-7 ">
           <a href="#" class="text-light"> Home </a> ::
           <a href="#" class="text-light>"> Destinations </a> ::
@@ -559,7 +499,7 @@
     <div class="row justify-content-center align-items-end pt-5 overflow-hidden position-relative">
       <div class="bot-but position-absolute top-100  translate-middle"></div>
       <span class="position-absolute translate-middle" style="width: 20px; top: 80%;">
-        <i class="fa-solid fa-arrow-up fs-3 text-light "></i>
+        <i class="fa-solid fa-arrow-up fs-4 text-light "></i>
       </span>
     </div>
   </div>
